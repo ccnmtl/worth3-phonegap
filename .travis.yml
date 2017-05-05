@@ -1,0 +1,15 @@
+dist: trusty
+sudo: false
+language: android
+android:
+  components:
+    - build-tools-22.0.1
+    - android-22
+install:
+  - npm install cordova
+before_script:
+  - cordova platform rm android
+  - cordova platform add android
+script:
+  - cordova prepare
+  - cordova build android --release -- --ant
