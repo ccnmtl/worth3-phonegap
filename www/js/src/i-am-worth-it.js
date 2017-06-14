@@ -7,14 +7,14 @@
     };
 
     $(document).ready(function() {
-        var $container = $('.container.feelings');
+        var $container = $('.container.i-am-worth-it');
 
-        $container.on('click', 'figure', function(e) {
+        $container.on('click', '.d-flex button', function(e) {
             e.preventDefault();
             var $myContainer = $(this).closest('.container');
-            var feeling = $.trim($(this).attr('alt'));
+            var attr = $.trim($(this).text());
 
-            $myContainer.find('.my-feeling').text(feeling);
+            $myContainer.find('.worth-it-attr').text(attr + '.');
 
             $(this).closest('div.panel').addClass('hidden');
             $myContainer.find('div.s1').removeClass('hidden');

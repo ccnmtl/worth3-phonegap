@@ -7,14 +7,14 @@
     };
 
     $(document).ready(function() {
-        var $container = $('.container.feelings');
+        var $container = $('.container.things-i-am-proud-of');
 
-        $container.on('click', 'figure', function(e) {
+        $container.on('click', '.d-flex button', function(e) {
             e.preventDefault();
             var $myContainer = $(this).closest('.container');
-            var feeling = $.trim($(this).attr('alt'));
+            var proudOf = $.trim($(this).text());
 
-            $myContainer.find('.my-feeling').text(feeling);
+            $myContainer.find('.proud-of').text(proudOf);
 
             $(this).closest('div.panel').addClass('hidden');
             $myContainer.find('div.s1').removeClass('hidden');
