@@ -8,11 +8,8 @@
         ],
         "plugins": {
             "cordova-plugin-battery-status": {},
-            "cordova-plugin-camera": {},
             "cordova-plugin-console": {},
-            "cordova-plugin-contacts": {},
             "cordova-plugin-device": {},
-            "cordova-plugin-device-motion": {},
             "cordova-plugin-device-orientation": {},
             "cordova-plugin-dialogs": {},
             "cordova-plugin-file": {},
@@ -25,18 +22,14 @@
             "cordova-plugin-network-information": {},
             "cordova-plugin-splashscreen": {},
             "cordova-plugin-statusbar": {},
-            "cordova-plugin-vibration": {},
             "cordova-plugin-whitelist": {}
         }
     },
     "dependencies": {
         "cordova-android": "^6.2.3",
         "cordova-plugin-battery-status": "~1.1.1",
-        "cordova-plugin-camera": "~2.1.1",
         "cordova-plugin-console": "~1.0.2",
-        "cordova-plugin-contacts": "~2.0.1",
         "cordova-plugin-device": "~1.1.1",
-        "cordova-plugin-device-motion": "~1.2.0",
         "cordova-plugin-device-orientation": "~1.0.2",
         "cordova-plugin-dialogs": "~1.2.0",
         "cordova-plugin-file": "~4.1.1",
@@ -49,7 +42,6 @@
         "cordova-plugin-network-information": "~1.2.0",
         "cordova-plugin-splashscreen": "~3.2.1",
         "cordova-plugin-statusbar": "~2.1.2",
-        "cordova-plugin-vibration": "~2.1.0",
         "cordova-plugin-whitelist": "~1.2.1"
     }
 }
