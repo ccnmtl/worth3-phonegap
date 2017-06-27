@@ -2,8 +2,7 @@
 /* global $, initActivityPanels */
 
 (function() {
-    $(document).ready(function() {
-        var $container = $('.container.self-talk');
+    var initActivity = function($container) {
         initActivityPanels($container);
 
         $container.find('.s2 button[type="submit"]').click(function(e) {
@@ -20,16 +19,15 @@
             }
         });
 
-        var correct = [0, 1, 3, 4, 6];
-
         $container.find('button.get-answers').click(function(e) {
             e.preventDefault();
             var $panel = $(this).closest('.panel');
             $.each($panel.find('label'), function(k, v) {
-                if (correct.indexOf(k) > -1) {
-                    $(v).addClass('text-success');
+                var $v = $(v);
+                if ($v.hasClass('selftalk-correct')) {
+                    $v.addClass('text-success');
                 } else {
-                    $(v).addClass('text-danger');
+                    $v.addClass('text-danger');
                 }
             });
             $panel.find('.alert').removeClass('hidden');
@@ -40,5 +38,10 @@
             var $panel = $(this).closest('.panel');
             $panel.find('.alert').removeClass('hidden');
         });
+    };
+
+    $(document).ready(function() {
+        initActivity($('.container.self-talk-3'));
+        initActivity($('.container.self-talk-4'));
     });
 })();

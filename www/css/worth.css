@@ -23,6 +23,10 @@ p, ol, ul, li {color: #000000; font-family: arial, helvetica, sans-serif!importa
 .safety .row { margin-bottom: 1em; }
 .safety .row .col.definition { text-align: right; }
 
+.embed-responsive {
+    margin-bottom: 1em;
+}
+
 /*
  * Not sure why this is necessary, but bootstrap's .btn-block is
  * displaying buttons wider than the .container. This is a workaround.
@@ -177,6 +181,7 @@ ol.toc li li {font-weight: normal;}
 .worth-icon {
     width: 200px;
     height: auto;
+    margin-bottom: 1rem;
 }
 
 .feelings figure {
@@ -194,4 +199,12 @@ ol.toc li li {font-weight: normal;}
     position: relative;
     left: 80px;
     top: -20px;
+}
+
+.nametag .card-header, .nametag .card-footer {background-color: #932951;}
+.nametag .card-block {background-color: #f7ecf0;}
+.nametag .card-header h1 {color: #fff;}
+
+.fantasy-feedback {
+    font-weight: bold;
 }
