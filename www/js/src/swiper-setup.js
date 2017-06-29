@@ -4,7 +4,7 @@
 (function() {
     var highlightTocItem = function($toc, id) {
         $toc.find('li').removeClass('highlight');
-        $toc.find('a[href="#' + id + '"]')
+        $toc.find('li ol li a[href="#' + id + '"]')
             .closest('li')
             .addClass('highlight');
     };
@@ -36,6 +36,12 @@
 
             $('.sidenav').width(0);
             swiper.slideTo(idx + 1);
+        });
+
+        $('#logo').click(function(e) {
+            e.preventDefault();
+            $('.sidenav').width(0);
+            swiper.slideTo(0);
         });
 
         var showing = false;
