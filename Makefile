@@ -1,3 +1,6 @@
+WORTH3_DIR ?= ~/public_html/worth3/worthapp
+
+
 runserver:
 	phonegap run android --emulator
 
@@ -6,7 +9,7 @@ clean:
 
 update:
 	git rm -rf www/video/*
-	cp -r ~/public_html/worth3/worthapp/* www/
+	cp -r $(WORTH3_DIR)/* www/
 	rm -rf www/node_modules/
 	rm -rf www/package*
 	rm -rf www/js/tests
