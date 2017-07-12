@@ -1,4 +1,4 @@
-WORTH3_DIR ?= /Users/nickb/Projects/workspaces/worth3/worthapp
+WORTH3_DIR ?= ../worth3/worthapp
 
 
 runserver:
