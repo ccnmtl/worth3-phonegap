@@ -1,5 +1,5 @@
 /* eslint-env es6 */
-/* global $, initActivityPanels */
+/* global $, initActivityPanels, onClickGetAnswers */
 
 (function() {
     $(document).ready(function() {
@@ -7,17 +7,6 @@
             $('.container.popping-our-problems, .container.practicing-pop');
         initActivityPanels($container);
 
-        $container.find('button[type="submit"]').click(function(e) {
-            e.preventDefault();
-            var $this = $(this);
-            var $panel = $this.parents('.panel').first();
-            $panel.find('input.show-correct')
-                .parents('.form-check-label')
-                .addClass('alert-success');
-
-            $panel.find('.alert').removeClass('hidden');
-            $this.hide();
-            $this.next().show();
-        });
+        $container.find('button.get-answers').click(onClickGetAnswers);
     });
 })();
