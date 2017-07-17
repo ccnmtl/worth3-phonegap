@@ -46,6 +46,7 @@ p, ol, ul, li {
     margin: 0 auto;
 }
 
+
 .container.feeling .row { text-align: center; }
 
 .toggle-toc-icon
@@ -217,9 +218,22 @@ ol.toc li li {font-weight: normal;}
     align-items: center;
     justify-content: center;
 }
-.ssnm-questions .col-md-1 img {max-width: 65%;}
+
+.ssnm-questions .form-check-input {margin-top: 0.5em;}
 
 .ssnm-me {font-size: 1.25em;}
+
+.ssnm-emotional-choice, .ssnm-practical-choice {
+    display: flex;
+    white-space: nowrap;
+}
+
+.ssnm-emotional-choice > img, .ssnm-practical-choice > img {
+    width: 25px;
+    height: 25px;
+    margin-right: 0.5em;
+    align-self: center;
+}
 
 .nametag {margin-top: 2em; margin-bottom: 2em; margin-left: 20%; margin-right: 20%;}
 .nametag .card-header, .nametag .card-footer {background-color: #932951;}
