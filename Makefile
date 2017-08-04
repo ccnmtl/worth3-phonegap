@@ -1,5 +1,5 @@
-#WORTH3_DIR ?= ../worth3/worthapp
-WORTH3_DIR ?= ~/public_html/worth3/worthapp
+WORTH3_DIR ?= ../worth3/worthapp
+# WORTH3_DIR ?= ~/public_html/worth3/worthapp
 
 
 runserver:
